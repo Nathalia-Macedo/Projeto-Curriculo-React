@@ -1,0 +1,35 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.C_C{
+    width: 250px;
+    height: 150px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+    gap: 0.6rem;
+    text-align: center;
+}
+
+.C_C:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 30); /* Ajuste a intensidade da sombra ao passar o cursor */
+
+}
+
+
+
+.link_certificado{
+    text-decoration: none;
+    color: black;
+    box-shadow: 1px 3px 5px black;
+    padding: 0.6rem;
+    border-radius: 5px;
+}
+

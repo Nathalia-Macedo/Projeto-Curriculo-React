@@ -1,0 +1,62 @@
+#image {
+    border-radius: 50%;
+    width: 80px;
+}
+
+.tela-EX {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Certifique-se de que a altura do contêiner seja igual à altura da visualização */
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(45deg, #7cbdd3, #f7bb87, #f570cd);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s linear infinite;
+}
+
+.experiences {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cartões quebrem para a próxima linha em telas menores */
+    justify-content: center;
+    gap: 1rem; /* Adiciona um espaçamento entre os cartões */
+}
+
+.cartao {
+    background-color: transparent;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    box-shadow: 1px 3px 5px black, 5px 10px 15px black;
+    padding: 1rem;
+    border-radius: 10px;
+    width: calc(33.33% - 2rem); /* Ajuste o valor conforme necessário */
+    margin: 1rem;
+}
+
+/* Adicionado um estilo para as informações dentro do cartão */
+.infos {
+    flex-grow: 1;
+}
+
+/* Adicionado um estilo para o título no cartão */
+h3 {
+    margin: 0;
+}
+
+/* Ajustes para telas menores (responsividade) */
+@media screen and (max-width: 768px) {
+    .cartao {
+        width: calc(50% - 2rem); /* Em telas menores, exiba dois cartões por linha */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cartao {
+        width: 100%; /* Em telas ainda menores, exiba um cartão por linha */
+        margin-right: 0; /* Remova o espaçamento entre os cartões */
+    }
+}

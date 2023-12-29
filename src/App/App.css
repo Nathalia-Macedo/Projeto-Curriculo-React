@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#tela-home{
+
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #7cbdd3;
+
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 100%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 0%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #7cbdd3, #f7bb87, #f570cd);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s linear infinite;
+    gap: 1rem;
+    flex-direction: column;
+    color: black;
+}
+
+.links {
+    width: 90%;
+    backdrop-filter: blur(5px);
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 3px 5px black, 5px 10px 15px;
+    margin-top: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("https://i.pinimg.com/originals/c3/04/d3/c304d37214464a790f68ecc226e4cc56.jpg");
+    background-size: cover;
+}
+
+#foto {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

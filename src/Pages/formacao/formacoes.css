@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  #root {
+    width: 100%;
+  }
+  
+
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .title {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    color: white;
+  }
+  
+  main {
+    width: 80%;
+    height: 85%;
+    background: linear-gradient(45deg, #add8e6, #ffdab9, #f0f0f0);    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto; /* Adicione esta linha para centralizar o contêiner main */
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 30); /* Valores aumentados para uma sombra mais intensa */
+    backdrop-filter: blur(15px);
+    gap:0.6rem
+}
+
+.input{
+    width: 100%;
+    padding: 3rem;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    outline: none;
+    height: 2rem;
+    background-image: url('../../assets/lupa.png');
+    background-size: 20px; /* Ajuste o tamanho da imagem conforme necessário */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Ajuste a posição da imagem conforme necessário */
+    padding-left: 40px;
+}
+
+.tela-formacoes{
+    height: 100vh;
+    background: linear-gradient(45deg, #7cbdd3, #f7bb87, #f570cd);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s linear infinite;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.certificados{
+    width: 91%;
+    border: 1px solid grey;
+    height: 60%;
+    display: flex;
+    gap: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+

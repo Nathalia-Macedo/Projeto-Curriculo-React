@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#root {
+    height: 100vh;
+}
+
+.container {
+    background: linear-gradient(45deg, #7cbdd3, #f7bb87, #f570cd);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s linear infinite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    overflow: auto;
+}
+
+.pessoal {
+    box-shadow: 5px 15px 30px black;
+    padding: 3rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column; /* Alterado para orientação de coluna para melhor ajuste em telas menores */
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 100%; /* Adicionado para garantir que a largura não ultrapasse a tela */
+}
+
+/* Adicionando Media Queries para Responsividade */
+
+/* Para telas menores que 768px (por exemplo, tablets em modo retrato) */
+@media (max-width: 768px) {
+    .container {
+        padding: 3rem;
+    }
+
+    .pessoal {
+        padding: 2rem;
+        font-size: 16px;
+    }
+}
+
+/* Para telas menores que 576px (por exemplo, telefones) */
+@media (max-width: 576px) {
+    .container {
+        padding: 2rem;
+    }
+
+    .pessoal {
+        padding: 1rem;
+        font-size: 14px;
+    }
+}
+
+/* Para telas com proporção 375x667 */
+@media (max-width: 375px) and (max-height: 667px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .pessoal {
+        padding: 0.5rem;
+        font-size: 12px;
+    }
+}

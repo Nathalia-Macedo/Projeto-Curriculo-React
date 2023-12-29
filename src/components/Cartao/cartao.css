@@ -1,0 +1,60 @@
+#image {
+    border-radius: 50%;
+    width: 25px;
+}
+
+.cartao {
+    background-image: url("https://i.pinimg.com/originals/c3/04/d3/c304d37214464a790f68ecc226e4cc56.jpg");
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    box-shadow: 1px 3px 5px black, 5px 10px 15px black;
+    padding: 0.5rem; /* Ajustei o padding para melhor visualização */
+    border-radius: 10px;
+    width: 25%; /* Alterei para 25%, mantendo a responsividade */
+    margin: 1%; /* Alterei para 1%, mantendo a responsividade */
+    display: inline-flex;
+}
+
+.infos {
+    flex-grow: 1;
+}
+
+/* Adicionado um estilo para o título no cartão */
+h3 {
+    margin: 0;
+}
+
+/* Ajustes para telas menores (responsividade) */
+@media screen and (max-width: 768px) {
+    .cartao {
+        width: 48%; /* Reduzi o tamanho para dois cartões por linha */
+        margin: 1%; /* Adicionei uma margem menor entre os cartões */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cartao {
+        width: 96%; /* Reduzi o tamanho para um cartão por linha */
+        margin: 1%; /* Adicionei uma margem superior e inferior entre os cartões */
+    }
+}
+
+/* Ajuste para a proporção 820x1180 */
+@media screen and (min-width: 820px) and (min-height: 1180px) {
+    .cartao {
+        width: 23%; /* Ajuste para exibir quatro cartões por linha */
+        margin: 1%; /* Mantive uma margem entre os cartões */
+    }
+}
+
+/* Ajuste para a proporção 1024x600 e todas após essa */
+@media screen and (min-width: 1024px) and (min-height: 600px) {
+    .cartao {
+        width: 23%; /* Ajuste para exibir quatro cartões por linha */
+        margin: 1%; /* Mantive uma margem entre os cartões */
+    }
+}

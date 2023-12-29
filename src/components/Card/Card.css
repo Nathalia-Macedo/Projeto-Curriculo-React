@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem; /* Ajuste conforme necessário */
+    margin: 0.5rem; /* Ajuste conforme necessário */
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    margin-top: 0.5rem; /* Ajuste conforme necessário */
+}
+
+#photo {
+    max-width: 100%;
+    height: auto; /* Para manter a proporção da imagem */
+    border-radius: 8px; /* Adicionei um arredondamento nas bordas da imagem, opcional */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Ajustes específicos para notebooks ou telas de tamanho similar */
+    .card {
+        max-width: 300px; /* Defina um tamanho máximo para o card */
+        margin: 0 auto; /* Centraliza o card na tela */
+                
+    }
+
+  
+}

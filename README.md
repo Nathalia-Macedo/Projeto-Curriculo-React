@@ -1,4 +1,5 @@
 # Projeto Currículo - Infinity School
+(Ainda em desenvolvimento)
 
 Esse projeto foi feito para ser usado como inspiração para a primeira aula de React do Supermódulo de React JS da Infinity School.
 ## Assuntos relacionados
